@@ -1,10 +1,12 @@
 import PagSenha from './screens/senha';
+import PagLogin from './screens/login';
+import PagCadastro from './screens/cadastro';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <PagSenha/>
+     <PagLogin/>
     </View>
   );
 }

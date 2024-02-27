@@ -18,17 +18,19 @@ const estilos = StyleSheet.create({
         width: "100%",
         height: 200,
         alignItems:"center",
-        justifyContent:"center"
+        justifyContent:"center",
+        borderRadius: 5
     }
     ,
     photo:{
+        marginTop: 25,
         width: 200,
         height: 51.27
     },
     textinho:{
         color:"#FFFFFF",
-        marginTop: 20,
-        marginBottom:30,
+        marginTop: 15,
+        marginBottom:20,
         fontSize: 20
       }
 })

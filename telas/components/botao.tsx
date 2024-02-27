@@ -1,7 +1,7 @@
 import { StyleSheet, Text,View, TextInput, TouchableOpacity } from "react-native"
 
 
-const botao = ({palavrinha})=>{
+const Botao = ({palavrinha})=>{
     return(
         <View>
             <TouchableOpacity style={style.botao}>
@@ -10,7 +10,7 @@ const botao = ({palavrinha})=>{
         </View>
     )
 }
-export default botao
+export default Botao
 
 const style = StyleSheet.create({
     botao:{
@@ -22,12 +22,12 @@ const style = StyleSheet.create({
         alignSelf: "center",
         justifyContent:"center",
         marginStart: 0,
-        marginTop: 30
+        marginTop: 25
     },
     cor:{
         alignSelf:"center",
         color:"#ffffff",
-        fontSize: 20
+        fontSize: 14
       }
     
     

@@ -12,7 +12,7 @@ function PagSenha() {
       <Text style={styles.textinh}>Insira seu e-mail para recuperar
         a senha</Text>
       <Inputt nome={"Email:"} texto={"Insira seu email"} />
-      <Botao palavrinha={"Cadastre-se"} />
+      <Botao palavrinha={"Recuperar"} />
     </View>
   )
 }

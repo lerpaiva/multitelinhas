@@ -1,7 +1,10 @@
 import { StyleSheet, Text,View, TextInput, TouchableOpacity } from "react-native"
 
+type ButtonProps = {
+    palavrinha: string;
+}
 
-const Botao = ({palavrinha})=>{
+const Botao = ({palavrinha}:ButtonProps)=>{
     return(
         <View>
             <TouchableOpacity style={style.botao}>

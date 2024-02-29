@@ -1,6 +1,10 @@
 import { StyleSheet, Text,View, TextInput } from "react-native"
 
-const Inputt = ({nome, texto})=>{
+type InputProps = {
+    nome: string;
+    texto: string;
+}
+const Inputt = ({nome, texto}: InputProps)=>{
     return(
         <View>
             <Text style={styles.texto}>{nome}</Text>

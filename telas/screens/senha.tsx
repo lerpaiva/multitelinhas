@@ -11,7 +11,7 @@ function PagSenha() {
       <StatusBar style="light" />
       <Text style={styles.textinh}>Insira seu e-mail para recuperar
         a senha</Text>
-      <Inputt nome={"Email:"} texto={"Insira seu email"} />
+      <Inputt nome={"Email:"} placeholder="Insira seu email"/>
       <Botao palavrinha={"Recuperar"} />
     </View>
   )

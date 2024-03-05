@@ -9,12 +9,12 @@ function PagCadastro(){
     <View>
       <Header cor={"#FF0000"} texto={"Cadastre-se"}/>
       <StatusBar style="light" />
-        <Inputt nome={"Nome:"} texto={"Insira seu nome"}/>
-        <Inputt nome={"Sobrenome:"} texto={"Insira seu sobrenome"}/>
-        <Inputt nome={"Email:"} texto={"Insira seu email"}/>
-        <Inputt nome={"Telefone:"} texto={"Insira seu telefone"}/>
-        <Inputt nome={"Senha:"} texto={"Insira sua senha"}/>
-        <Inputt nome={"Confirme sua senha:"} texto={"Insira sua senha "}/>
+        <Inputt nome={"Nome:"} placeholder="Insira seu nome" />
+        <Inputt nome={"Sobrenome:"} placeholder="Insira seu sobrenome"/>
+        <Inputt nome={"Email:"} placeholder="Insira seu email" />
+        <Inputt nome={"Telefone:"} placeholder="Insira seu telefone" />
+        <Inputt nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true}/>
+        <Inputt nome={"Confirme sua senha:"} placeholder="Insira sua senha " />
         <Botao palavrinha={"Cadastre-se"}/>
 
     </View>

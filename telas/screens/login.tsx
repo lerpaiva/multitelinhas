@@ -10,8 +10,8 @@ function PagLogin(){
       <Header cor={"#000000"} texto={"Login"}/>
       <StatusBar style="light" />
       <Text style={styles.textinh}>Faça Login para Acessar o Sistema!</Text>
-        <Inputt nome={"Email:"} texto={"Insira seu email"}/>
-        <Inputt nome={"Senha:"} texto={"Insira sua senha"}/>
+        <Inputt nome={"Email:"} placeholder="Insira seu email"/>
+        <Inputt nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true}/>
         <Botao palavrinha={"Fazer Login"}/>
         <View style={styles.azul}>
         <TouchableOpacity><Text style={styles.escritinha}>Cadastre-se</Text></TouchableOpacity>

@@ -4,7 +4,7 @@ import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 function Footer({...props}) {
     return (
-        <View style={[styles.container, {backgroundColor: props.color}]}>
+        <View style={[styles.container, {backgroundColor: props.color},{borderColor: props.corzinha}]}>
             <StatusBar style="dark"/>
             <TouchableOpacity  style={styles.icon}>{props.icone}</TouchableOpacity>
             <TouchableOpacity style={styles.icon}>{props.icone2}</TouchableOpacity>
@@ -20,6 +20,7 @@ function Footer({...props}) {
             alignSelf: "center",
             justifyContent: "center",
             gap: 20,
+            borderTopWidth: 1,
         },
         icon:{
             marginTop: 16,

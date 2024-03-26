@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, } from "react-native"
+import { View, StyleSheet, ScrollView, } from "react-native"
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import NavHead from "../components/nav";
@@ -22,6 +22,7 @@ function PagCadItens() {
     </View>
   )
 }
+
 const styles = StyleSheet.create({
 espacinho:{
     marginTop: 30

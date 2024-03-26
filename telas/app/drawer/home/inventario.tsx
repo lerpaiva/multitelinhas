@@ -1,16 +1,16 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Touchable } from "react-native"
-import Inputt from "../components/input"
-import Botao from "../components/botao";
-import Header from "../components/header";
+import Inputt from "../../../components/input"
+import Botao from "../../../components/botao";
+import Header from "../../../components/header";
 import { Entypo } from '@expo/vector-icons';
 import { EvilIcons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
-import NavHead from "../components/nav";
-import Itenss from "../components/itens";
-import Footer from "../components/footer";
-import BtnFlutua from "../components/botFlutua";
+import NavHead from "../../../components/nav";
+import Itenss from "../../../components/itens";
+import Footer from "../../../components/footer";
+import BtnFlutua from "../../../components/botFlutua";
 
 function PagInventario() {
     return (

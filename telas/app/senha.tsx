@@ -8,11 +8,10 @@ function PagSenha() {
   return (
     <View>
       <Header cor={"#011E83"} texto={"Recuperação de Senha"} />
-      <StatusBar style="light" />
       <Text style={styles.textinh}>Insira seu e-mail para recuperar
         a senha</Text>
       <Inputt nome={"Email:"} placeholder="Insira seu email"/>
-      <Botao palavrinha={"Recuperar"} />
+      <Botao href="" palavrinha={"Recuperar"} />
     </View>
   )
 }

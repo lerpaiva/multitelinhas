@@ -16,16 +16,17 @@ export default function NavHead({...props}) {
     const styles = StyleSheet.create({
         container: {
             width:"100%",
-            height: 60,
+            height: 70,
             flexDirection: "row",
             justifyContent: "space-between",
             borderBottomWidth: 1,
             borderBottomColor: "#f5f5f5",
             gap: 10,
-            marginTop: 30,
+            marginTop: 0,
             paddingTop: 15,
             paddingLeft: 20,
             paddingRight: 20
+
         },
         texto: {
             marginTop: 5,

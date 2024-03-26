@@ -1,16 +1,18 @@
 import { StyleSheet, Text,View, TextInput, TouchableOpacity } from "react-native"
+import { LinkProps } from "expo-router/build/link/Link"
+import { Link } from "expo-router/build/link/Link"
 
-type ButtonProps = {
+interface LinkButtonProps extends LinkProps {
     palavrinha: string;
 }
 
-const Botao = ({palavrinha}:ButtonProps)=>{
+const Botao = ({palavrinha, ...props}:LinkButtonProps)=>{
     return(
-        <View>
+        <Link {...props} asChild>
             <TouchableOpacity style={style.botao}>
                 <Text style={style.cor}>{palavrinha}</Text>
             </TouchableOpacity>
-        </View>
+        </Link>
     )
 }
 export default Botao
@@ -25,7 +27,8 @@ const style = StyleSheet.create({
         alignSelf: "center",
         justifyContent:"center",
         marginStart: 0,
-        marginTop: 25
+        marginTop: 25,
+        marginBottom: 8
     },
     cor:{
         alignSelf:"center",

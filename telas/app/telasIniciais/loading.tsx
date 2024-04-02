@@ -28,7 +28,7 @@ function PagLoading() {
   return (
     <View style={styles.container}>
       <View style={styles.background}>
-        <Image source={require('../assets/Logo.png')} style={styles.logo} />
+        <Image source={require('@assets/Logo.png')} style={styles.logo} />
         <ActivityIndicator size="large" color="#fff" style={styles.loader} />
       </View>
     </View>

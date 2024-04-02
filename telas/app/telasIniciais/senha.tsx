@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, } from "react-native"
-import Inputt from "../components/input"
-import Botao from "../components/botao";
-import Header from "../components/header";
+import Inputt from "../../components/input"
+import Botao from "../../components/botao";
+import Header from "../../components/header";
 import { StatusBar } from "expo-status-bar";
 
 function PagSenha() {

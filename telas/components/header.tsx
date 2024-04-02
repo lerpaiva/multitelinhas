@@ -7,7 +7,7 @@ type HeaderProps = {
 const Header = ({cor, texto}: HeaderProps)=>{
     return(
         <View style={[estilos.container, {backgroundColor:cor}]}>
-            <Image style={estilos.photo} source={require('../assets/Logo.png')}/>
+            <Image style={estilos.photo} source={require('@assets/Logo.png')}/>
             <Text style={estilos.textinho}>{texto}</Text>
         </View>
     )

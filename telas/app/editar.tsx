@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, } from "react-native"
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
-import NavHead from "../components/nav";
+import NavHead from "@comp/nav";
 import { AntDesign } from '@expo/vector-icons';
-import InputItens from "../components/inputItens";
-import Footer from "../components/footer";
+import InputItens from "@comp/inputItens";
+import Footer from "@comp/footer";
 
 function PagEditar() {
   return (

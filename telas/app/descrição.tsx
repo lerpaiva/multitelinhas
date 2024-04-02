@@ -6,7 +6,7 @@ import { AntDesign } from '@expo/vector-icons';
 import InputItens from "../components/inputItens";
 import Footer from "../components/footer";
 import Caracteristicas from "../components/caracteristicas";
-import BtnFlutua from "../components/botFlutua";
+import BtnFlutua from "@comp/botFlutua";
 
 function PagDescricao() {
   return (

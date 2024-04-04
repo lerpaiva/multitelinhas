@@ -12,7 +12,6 @@ import BtnFlutua from "@comp/botFlutua";
 function PagInventario() {
     return (
         <View style={styles.container}>
-            <NavHead color="#ffffff" icone={<Entypo name="menu" size={30} color="#595959" />} texto = "Lista" icone2={<EvilIcons name="search" size={30} color="#595959" />}></NavHead>
         <ScrollView>
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
@@ -26,7 +25,6 @@ function PagInventario() {
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
         </ScrollView >
         <BtnFlutua icone ={ <AntDesign name="pluscircle" size={60} color="#ff0000" />}></BtnFlutua>
-        <Footer color="#ff0000" corzinha="#ff0000" icone={<MaterialCommunityIcons name="camera-flip" size={24} color="white" />} icone2 = {<FontAwesome5 name="list-ol" size={24} color="white" />}/>
         </View>
             
   )

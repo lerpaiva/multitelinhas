@@ -1,7 +1,7 @@
 import { StyleSheet, ScrollView } from "react-native"
-import Inputt from "../../components/input"
-import Botao from "../../components/botao";
-import Header from "../../components/header";
+import Inputt from "@comp/input"
+import Botao from "@comp/botao";
+import Header from "@comp/header";
 
 
 function PagCadastro(){

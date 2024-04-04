@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, } from "react-native"
+import { View, Text, StyleSheet, TouchableOpacity, } from "react-native"
 import Inputt from "@comp/input"
 import Botao from "@comp/botao";
 import Header from "@comp/header";
@@ -12,9 +12,7 @@ function PagLogin() {
          <Text style={styles.textinh}>Faça Login para Acessar o Sistema!</Text>
          <Inputt nome={"Email:"} placeholder="Insira seu email" />
          <Inputt nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true} />
-         <Link href="drawer" asChild>
-            <Botao href="drawer" palavrinha={"Fazer Login"} />
-         </Link>
+            <Botao href="TabNav" palavrinha={"Fazer Login"} />
          <View style={styles.azul}>
             <Link href="telasIniciais/cadastro" asChild>
                <TouchableOpacity><Text style={styles.escritinha}>Cadastre-se</Text></TouchableOpacity>

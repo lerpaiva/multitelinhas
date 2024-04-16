@@ -3,11 +3,15 @@ import Inputt from "@comp/input"
 import Botao from "@comp/botao";
 import Header from "@comp/header";
 import { Link } from 'expo-router';
+import { useColor } from "../../temas/Temas";
 
 function PagLogin() {
+   const cores = useColor()
+
    return (
+
       <View>
-         <Header cor={"#000000"} texto={"Login"} />
+         <Header cor={cores.bgPrimary} texto={"Login"} />
 
          <Text style={styles.textinh}>Faça Login para Acessar o Sistema!</Text>
          <Inputt nome={"Email:"} placeholder="Insira seu email" />
@@ -24,7 +28,11 @@ function PagLogin() {
 
       </View>
    )
+
 }
+
+
+
 const styles = StyleSheet.create({
    escrita: {
       color: "#ffffff"

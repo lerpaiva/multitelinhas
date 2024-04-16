@@ -1,16 +1,14 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Touchable } from "react-native"
-import { Entypo } from '@expo/vector-icons';
-import { EvilIcons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
+import { View, StyleSheet, TouchableOpacity, ScrollView } from "react-native"
+import { useNavigation } from "expo-router";
 import { AntDesign } from '@expo/vector-icons';
-import NavHead from "@comp/nav";
+import { Link } from "expo-router";
 import Itenss from "@comp/itens";
-import Footer from "@comp/footer";
-import BtnFlutua from "@comp/botFlutua";
 
 function PagInventario() {
+    const navigation = useNavigation();
+
     return (
+
         <View style={styles.container}>
         <ScrollView>
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
@@ -24,7 +22,9 @@ function PagInventario() {
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
             <Itenss cod="956389" nome="CADEIRAS SENAI"/>
         </ScrollView >
-        <BtnFlutua icone ={ <AntDesign name="pluscircle" size={60} color="#ff0000" />}></BtnFlutua>
+        <Link href="cadItens" asChild>
+            <TouchableOpacity style={styles.botaoo}><AntDesign name="pluscircle" size={60} color="#ff0000" /></TouchableOpacity>
+        </Link>
         </View>
             
   )
@@ -33,6 +33,13 @@ const styles = StyleSheet.create({
     container:{
         flex: 1
     },
+    botaoo:{
+        position: "absolute",
+        zIndex: 1,
+        bottom: 20,
+        right: 20,
+    },
+
     escrita: {
         color: "#ffffff"
     },

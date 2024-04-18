@@ -21,7 +21,8 @@ espacinho:{
     marginTop: 30
 },
 container:{
-  flex: 1
+  flex: 1,
+  backgroundColor: "#ffffff"
 }
 
 })

@@ -1,8 +1,9 @@
 import { View, StyleSheet, TouchableOpacity, ScrollView } from "react-native"
 import { useNavigation } from "expo-router";
-import { AntDesign } from '@expo/vector-icons';
 import { Link } from "expo-router";
 import Itenss from "@comp/itens";
+
+import { AntDesign } from '@expo/vector-icons';
 
 function PagInventario() {
     const navigation = useNavigation();
@@ -11,18 +12,18 @@ function PagInventario() {
 
         <View style={styles.container}>
         <ScrollView>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
-            <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss href="TabNav/DrawerNav/Home/descricao" cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss href="Home/descricao" cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
+                <Itenss cod="956389" nome="CADEIRAS SENAI"/>
         </ScrollView >
-        <Link href="cadItens" asChild>
+        <Link href="TabNav/DrawerNav/Home/cadItens" asChild>
             <TouchableOpacity style={styles.botaoo}><AntDesign name="pluscircle" size={60} color="#ff0000" /></TouchableOpacity>
         </Link>
         </View>
@@ -31,7 +32,8 @@ function PagInventario() {
 }
 const styles = StyleSheet.create({
     container:{
-        flex: 1
+        flex: 1,
+        backgroundColor: "#ffffff"
     },
     botaoo:{
         position: "absolute",

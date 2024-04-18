@@ -1,15 +1,19 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text,View, TextInput } from "react-native"
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 type ItensProps = {
     cod: string;
     nome: string;
 }
-const Itenss = ({cod, nome}: ItensProps)=>{
+const Itenss = ({...props})=>{
     return(
-      <View style={styles.cont}>
-        <Text style={styles.numm}>{cod}</Text>
-        <Text>{nome}</Text>
-      </View>
+    <Link href={props} asChild>
+            <TouchableOpacity style={styles.cont}>
+                <Text style={styles.numm}>{props.cod}</Text>
+                <Text>{props.nome}</Text>
+            </TouchableOpacity>
+    </Link>
     )
 
 }

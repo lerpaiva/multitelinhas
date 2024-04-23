@@ -2,14 +2,16 @@ import { View, Text, StyleSheet } from "react-native"
 import Inputt from "@comp/input"
 import Botao from "@comp/botao";
 import Header from "@comp/header";
+import useColor from "../../temas/Temas";
 
 function PagSenha() {
+  const color = useColor()
   return (
-    <View>
-      <Header cor={"#011E83"} texto={"Recuperação de Senha"} />
+    <View style={{backgroundColor: color.bgPrimary, height: "100%" }}>
+      <Header cor={color.nome === 'dark'? color.bgPrimary: "#011E83"} texto={"Recuperação de Senha"} />
       <Text style={styles.textinh}>Insira seu e-mail para recuperar
         a senha</Text>
-      <Inputt nome={"Email:"} placeholder="Insira seu email"/>
+      <Inputt cor={color} nome={"Email:"} placeholder="Insira seu email"/>
       <Botao href="" palavrinha={"Recuperar"} />
     </View>
   )

@@ -2,50 +2,25 @@ import { StyleSheet, ScrollView } from "react-native"
 import Inputt from "@comp/input"
 import Botao from "@comp/botao";
 import Header from "@comp/header";
-import { useColor } from "../../temas/Temas";
+import useColor from "../../temas/Temas";
 
 
 function PagCadastro(){
+   const color = useColor()
   return (
-    <ScrollView>
-      <Header cor={"#FF0000"} texto={"Cadastre-se"}/>
-        <Inputt nome={"Nome:"} placeholder="Insira seu nome" />
-        <Inputt nome={"Sobrenome:"} placeholder="Insira seu sobrenome"/>
-        <Inputt nome={"Email:"} placeholder="Insira seu email" />
-        <Inputt nome={"Telefone:"} placeholder="Insira seu telefone" />
-        <Inputt nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true}/>
-        <Inputt nome={"Confirme sua senha:"} placeholder="Insira sua senha " />
-        <Botao href={""} palavrinha={"Cadastre-se"}/>
+    <ScrollView style={{backgroundColor: color.bgPrimary, height: 850 }}>
+      <Header cor={color.nome === 'dark'? color.bgPrimary: "#ff0000"} texto={"Cadastre-se"}/>
+        <Inputt cor={color} nome={"Nome:"} placeholder="Insira seu nome" />
+        <Inputt cor={color} nome={"Sobrenome:"} placeholder="Insira seu sobrenome"/>
+        <Inputt  cor={color}nome={"Email:"} placeholder="Insira seu email" />
+        <Inputt  cor={color} nome={"Telefone:"} placeholder="Insira seu telefone" />
+        <Inputt  cor={color} nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true}/>
+        <Inputt  cor={color} nome={"Confirme sua senha:"} placeholder="Insira sua senha " />
+        <Botao  href={""} palavrinha={"Cadastre-se"}/>
 
     </ScrollView>
   )
 }
-const styles = StyleSheet.create({
- escrita:{
-    color:"#ffffff"
- },
- textinh:{
-    marginTop: 50,
-    alignSelf:"center",
-    fontWeight:"500",
-    fontSize: 16,
-    marginBottom: 30,
 
-    textAlign:"center"
- }, 
 
- escritinha:{
-    marginTop: 20,
-    color: "#4305C7", 
-    flexDirection: "row",
-    justifyContent: "space-between"
- 
-},
- azul:{
-    marginEnd: 20,
-    marginStart: 20,
-    flexDirection: "row",
-    justifyContent: "space-between"
- }
-})
 export default PagCadastro

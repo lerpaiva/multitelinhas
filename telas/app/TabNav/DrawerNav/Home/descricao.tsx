@@ -1,7 +1,8 @@
-import { View, StyleSheet, ScrollView, } from "react-native"
+import { View, StyleSheet, ScrollView, TouchableOpacity } from "react-native"
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Caracteristicas from "@comp/caracteristicas";
 import BtnFlutua from "@comp/botFlutua";
+import { Link } from "expo-router";
 
 function PagDescricao() {
   return (
@@ -15,14 +16,26 @@ function PagDescricao() {
                 <Caracteristicas titulo="Data de Registro" textinho="05/03/2024"/>
             </View>
         </ScrollView>
-        <BtnFlutua icone ={<MaterialCommunityIcons name="pencil-circle" size={60} color="#ff0000" />}></BtnFlutua>
+        <Link href="TabNav/DrawerNav/Home/editar" asChild>
+            <TouchableOpacity style={styles.botaoo}><MaterialCommunityIcons name="pencil-circle" size={60} color="#ff0000" /></TouchableOpacity>
+        </Link>
+
+        
     </View>
   )
 }
 const styles = StyleSheet.create({
 
+  botaoo:{
+    position: "absolute",
+    zIndex: 1,
+    bottom: 20,
+    right: 20,
+},
+
 container:{
-  flex: 1
+  flex: 1,
+  backgroundColor: "white"
 },
 cinzinha:{
     width: "100%",

@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { StyleSheet, Text,View, TextInput } from "react-native"
+import { StyleSheet, Text } from "react-native"
 import { TouchableOpacity } from "react-native-gesture-handler";
 import useColor from "../temas/Temas";
 
@@ -11,7 +11,7 @@ const Itenss = ({...props})=>{
             height: 60,
             width: "100%",
             borderTopWidth: 1,
-            borderColor: "#F5F5F5",
+            borderColor: color.nome === 'dark'? "#3A2828": "#ffffff",
             paddingLeft: 20,
             paddingTop: 10,
             marginBottom: 10

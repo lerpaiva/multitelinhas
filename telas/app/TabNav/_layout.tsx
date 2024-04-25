@@ -1,7 +1,7 @@
 import { Foundation } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Tabs } from "expo-router";
-import { ColorValue } from 'react-native';
+import { ColorValue, TouchableOpacity } from 'react-native';
 import useColor from '../../temas/Temas';
 
 
@@ -14,7 +14,7 @@ export default function Layout (){
 
         }}>
             <Tabs.Screen name="scanner" options={{ headerTitle: "Scanner",
-                headerRight: ()=> (<Foundation style={{marginRight: 20}}name="refresh" size={24} color="white" />),
+                headerRight: ()=> (<TouchableOpacity><Foundation style={{marginRight: 20}}name="refresh" size={24} color="white" /></TouchableOpacity>),
                tabBarIcon:({color, size}: { color: ColorValue, size: number }) => (
                 <MaterialIcons name="camera-alt" size={size} color = {color} />
                 

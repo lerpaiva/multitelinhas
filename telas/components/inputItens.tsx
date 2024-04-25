@@ -1,14 +1,15 @@
-import { StatusBar } from "expo-status-bar"
+
 import { StyleSheet, Text,View, TextInput, TextInputProps } from "react-native"
 import { useState } from "react"
-import useColor from "../temas/Temas"
+import useColor, { Cores } from "../temas/Temas"
 interface InputtProps extends TextInputProps{
-    nome: string
+    nome: string,
+    cor: Cores
 }
 
 const InputItens = ({nome, ...props}: InputtProps)=>{
-  const [hover, setHover] = useState("#5d5c5c")
   const color = useColor()
+  const [hover, setHover] = useState(props.cor.inputtextcolorPrimaryVariant)
   const styles = StyleSheet.create({
     container:{
       height: 51,
@@ -52,9 +53,9 @@ const InputItens = ({nome, ...props}: InputtProps)=>{
                 <Text style={styles.textt}>{nome} <Text style={styles.asterisco}>*</Text></Text>
             </View>
                 <TextInput style= {styles.container} {...props} onFocus={() =>{
-                setHover("#F39200")
+                setHover(props.cor.inputbgHover)
             }} onBlur={() =>{
-                setHover("#5d5c5c")
+                setHover(props.cor.inputtextcolorPrimaryVariant)
             }}/>
             </View>
     )

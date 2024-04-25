@@ -1,4 +1,4 @@
-import { StyleSheet, Text,View, TextInput, TouchableOpacity,StatusBar, Image } from "react-native"
+import { StyleSheet, Text,View, Image } from "react-native"
 
 type HeaderProps = {
     texto: string;

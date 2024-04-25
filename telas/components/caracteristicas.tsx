@@ -1,4 +1,4 @@
-import { StyleSheet, View, TouchableOpacity, Text } from "react-native"
+import { StyleSheet, View, Text } from "react-native"
 import useColor from "../temas/Temas";
 
 type CaracProps = {
@@ -6,7 +6,7 @@ type CaracProps = {
     textinho: string;
 }
 
-function Caracteristicas({titulo,textinho,...props}:CaracProps) {
+function Caracteristicas({titulo,textinho}:CaracProps) {
     const color = useColor()
     const styles = StyleSheet.create({
         tit:{

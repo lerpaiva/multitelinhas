@@ -18,11 +18,11 @@ function PagEditar() {
   return (
     <View style={styles.container}>
         <ScrollView style={styles.espacinho}>
-          <InputItens nome="N° inventário"/>
-          <InputItens nome="Descrição"/>
-          <InputItens nome="Local"/>
-          <InputItens nome="Responsável"/>
-          <InputItens nome="Data de registro"/>
+          <InputItens cor={color} nome="N° inventário"/>
+          <InputItens cor={color} nome="Descrição"/>
+          <InputItens cor={color} nome="Local"/>
+          <InputItens cor={color} nome="Responsável"/>
+          <InputItens cor={color} nome="Data de registro"/>
  
         </ScrollView>
     </View>

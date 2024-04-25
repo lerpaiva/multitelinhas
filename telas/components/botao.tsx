@@ -1,8 +1,7 @@
-import { StyleSheet, Text,View, TextInput, TouchableOpacity } from "react-native"
+import { StyleSheet, Text, TouchableOpacity } from "react-native"
 import { LinkProps } from "expo-router/build/link/Link"
 import { Link } from "expo-router/build/link/Link"
 import useColor from "../temas/Temas"
-import { Cores } from "../temas/Temas"
 
 interface LinkButtonProps extends LinkProps {
     palavrinha: string;

@@ -13,7 +13,7 @@ export default function Layout (){
             tabBarShowLabel: false,
 
         }}>
-            <Tabs.Screen name="scanner" options={{
+            <Tabs.Screen name="scanner" options={{ headerTitle: "Scanner",
                 headerRight: ()=> (<Foundation style={{marginRight: 20}}name="refresh" size={24} color="white" />),
                tabBarIcon:({color, size}: { color: ColorValue, size: number }) => (
                 <MaterialIcons name="camera-alt" size={size} color = {color} />

@@ -17,7 +17,7 @@ export default function layout() {
           backgroundColor: color.nome === 'dark'? color.bgPrimary: "#ffffff"
         }
     }}>
-        <Drawer.Screen name="Home" options={{ headerShown: false, drawerIcon: ({size, color}) =>(
+        <Drawer.Screen name="Home" options={{headerShown: false, drawerIcon: ({size, color}) =>(
           <MaterialIcons name="home" size={size} color={color} />
         )  }} />
 
@@ -25,7 +25,7 @@ export default function layout() {
           <FontAwesome5 name="user-alt" size={size} color={color} />
         )  }} />
     
-        <Drawer.Screen name="Sobre" options={{ headerShown: false, drawerIcon: ({size, color}) =>(
+        <Drawer.Screen name="Sobre"  options={{ headerShown: false, title:"Sobre o App", drawerIcon: ({size, color}) =>(
           <AntDesign name="exclamationcircle" size={size} color={color} />
         )  }} />
 

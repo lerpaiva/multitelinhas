@@ -14,8 +14,7 @@ function PagLogin() {
       },
       container:{
          backgroundColor: color.bgPrimary,
-         marginLeft: 20,
-         marginRight: 20,
+   
          gap: 10,
          height: "100%"
       },
@@ -30,7 +29,7 @@ function PagLogin() {
       },
    
       escritinha: {
-         marginTop: 20,
+         marginTop: 0,
          color: color.nome === 'dark'? color.inputtextcolorPrimaryVariant: "#011E83",
          flexDirection: "row",
          justifyContent: "space-between"

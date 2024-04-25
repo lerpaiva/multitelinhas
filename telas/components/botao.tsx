@@ -3,6 +3,7 @@ import { LinkProps } from "expo-router/build/link/Link"
 import { Link } from "expo-router/build/link/Link"
 import useColor from "../temas/Temas"
 
+
 interface LinkButtonProps extends LinkProps {
     palavrinha: string;
 }

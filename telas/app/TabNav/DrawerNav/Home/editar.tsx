@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, } from "react-native"
+import { View, StyleSheet, ScrollView, } from "react-native"
 import useColor from "../../../../temas/Temas";
 import InputItens from "@comp/inputItens";
 

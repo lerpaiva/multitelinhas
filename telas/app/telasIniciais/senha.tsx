@@ -6,6 +6,20 @@ import useColor from "../../temas/Temas";
 
 function PagSenha() {
   const color = useColor()
+  const styles = StyleSheet.create({
+  escrita: {
+    color: "#ffffff"
+  },
+  textinh: {
+    marginTop: 50,
+    alignSelf: "center",
+    fontWeight: "500",
+    fontSize: 16,
+    maxWidth: 230,
+    textAlign: "center",
+    color: color.nome === "dark"? "#ffffff": "#000000"
+  }
+})
   return (
     <View style={{backgroundColor: color.bgPrimary, height: "100%" }}>
       <Header cor={color.nome === 'dark'? color.bgPrimary: "#011E83"} texto={"Recuperação de Senha"} />
@@ -16,18 +30,5 @@ function PagSenha() {
     </View>
   )
 }
-const styles = StyleSheet.create({
-  escrita: {
-    color: "#ffffff"
-  },
-  textinh: {
-    marginTop: 50,
-    alignSelf: "center",
-    fontWeight: "500",
-    fontSize: 16,
-    maxWidth: 230,
-    textAlign: "center"
-  }
-})
 export default PagSenha
 

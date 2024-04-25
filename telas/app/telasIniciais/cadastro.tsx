@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView } from "react-native"
+import { ScrollView } from "react-native"
 import Inputt from "@comp/input"
 import Botao from "@comp/botao";
 import Header from "@comp/header";

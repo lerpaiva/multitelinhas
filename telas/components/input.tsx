@@ -30,7 +30,7 @@ const Inputt = ({nome, ...props}: InputProps)=>{
             marginTop: 15,
             marginStart:25,
             fontSize: 14,
-            color: color.inputtextcolorPrimaryVariant
+            color: color.nome === 'dark'? "#ffffff": "#000000"
         }
     })
     return(

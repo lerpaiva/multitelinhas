@@ -52,7 +52,7 @@ function PagLogin() {
          <Text style={styles.textinh}>Faça Login para Acessar o Sistema!</Text>
          <Inputt nome={"Email:"} placeholder="Insira seu email" cor={color}/>
          <Inputt nome={"Senha:"} placeholder="Insira sua senha" secureTextEntry={true} cor={color} />
-            <Botao href="TabNav" palavrinha={"Fazer Login"} />
+            <Botao href="TabNav" palavrinha={"Entrar"} />
          <View style={styles.azul}>
             <Link href="telasIniciais/cadastro" asChild>
                <TouchableOpacity><Text style={styles.escritinha}>Cadastre-se</Text></TouchableOpacity>

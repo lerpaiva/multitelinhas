@@ -4,13 +4,18 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import useColor from '../../../temas/Temas';
 
 export default function layout() {
+  const color = useColor()
   return (
     <Drawer drawerContent={(...props) => (
       CustomDrawer(...props)
     )} screenOptions={{
-        drawerInactiveTintColor: "#d9d9d9"
+        drawerInactiveTintColor: "#d9d9d9",
+        drawerStyle:{
+          backgroundColor: color.nome === 'dark'? color.bgPrimary: "#ffffff"
+        }
     }}>
         <Drawer.Screen name="Home" options={{ headerShown: false, drawerIcon: ({size, color}) =>(
           <MaterialIcons name="home" size={size} color={color} />

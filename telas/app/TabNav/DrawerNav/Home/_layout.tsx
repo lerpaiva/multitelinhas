@@ -3,15 +3,20 @@ import {Stack} from 'expo-router'
 import { MaterialIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Foundation } from '@expo/vector-icons';
+import useColor from '../../../../temas/Temas';
 
 export default function Layout(){
+    const color = useColor()
     return(
         <Stack>
-            <Stack.Screen name='inventario' options={{ headerTitle: "Lista", headerTitleAlign: "center",
-                headerLeft: () =>(<DrawerToggleButton/>
+            <Stack.Screen name='inventario' options={{ headerTitle: "Lista",headerTitleStyle:{color: color.nome === 'dark'? "#ffffff": "#000000"}, headerTitleAlign: "center",
+                headerLeft: () =>(<DrawerToggleButton tintColor={color.inputtextcolorPrimaryVariant}/>
                 ),
                 headerSearchBarOptions:{
-                    placeholder: "Pesquisar"
+                    headerIconColor: color.inputtextcolorPrimaryVariant
+                },
+                headerStyle:{
+                    backgroundColor: color.nome === 'dark'? color.bgPrimary: "#ffffff"
                 }
                 
                 }}/>
